@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: white;
+}
+.title {
+    font-weight: bold;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+.title-image {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container-center {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2.5em;
+}
+
+@media (min-width: 768px) {
+    .main-title { font-size: 90px; }
+    .subtitle { font-size: 20px; }
+}
