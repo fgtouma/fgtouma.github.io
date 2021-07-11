@@ -7,13 +7,61 @@
     <title>MetalMonday</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://kit.fontawesome.com/77d041732e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="image-container">
+    <div class="image-container mb-5">
         <img src="static/img/brick.webp" class="title-image" alt="Exterior of brick building">
         <div class="image-container-center">
             <h1 class="title main-title">Hello Beautiful People</h1>
             <p class="subtitle">San Francisco & Chicago-based Francesca "Ozzy" Touma has been showcased in solo and group exhibitions across the United States. Her work offers perspective into a variety of themes in a way that is accessible to a wide range of audiences. To learn more, get in touch.</p>
+        </div>
+    </div>
+    <div class="image-gallery">
+        <div class="row">
+            <div class="col">
+                <a href="./devito.html">
+                    <div class="image" style="background-image: url('static/img/devito.webp')"></div>
+                </a>
+            </div>
+            <div class="col">
+                <h1 class="pt-5 mt-5">more stuff here soon lol</h1>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col" style="background-color: #37322e;">
+                <div class="container py-5">
+                    <div class="row my-4">
+                        <div class="col">
+                            <div class="contact-title">
+                                <h1>Contact</h1>
+                                <p>Please get in touch for more information about the artist, to discuss possible collaborations, or for any media inquiries.</p>
+                                <hr width="25%" class="mx-auto my-5">
+                                <div class="text-center">
+                                    <i class="fab fa-instagram fa-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <form id="contactForm" class="mx-auto" style="width: 60%">
+                                <div class="mb-3">
+                                  <label for="nameField" class="form-label">Name</label>
+                                  <input type="text" class="form-control" name="name" id="nameField" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="emailField" class="form-label">Email</label>
+                                  <input type="email" class="form-control" name="email" id="emailField" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="messageField" class="form-label">Message</label>
+                                    <textarea cols="50" rows="10" class="form-control" name="message" id="messageField" required></textarea>
+                                </div>
+                                <button id="submitContactForm" type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

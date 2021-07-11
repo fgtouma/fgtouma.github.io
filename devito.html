@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetalMonday | DeVito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <a style="text-decoration: none; color: white; font-size: 30px;" href="index.html">< Back to Gallery</a>
+
+        <div class="mt-5" id='product-component-1626037401202'></div>
+    </div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'metalmonday-zztest.myshopify.com',
+      storefrontAccessToken: 'fc316895e6f53466edeba68ad4559473',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '6754608775365',
+        node: document.getElementById('product-component-1626037401202'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        },
+        "text-align": "left"
+      },
+      "title": {
+        "font-family": "Arial, sans-serif",
+        "font-weight": "normal",
+        "font-size": "26px",
+        "color": "#ffffff"
+      },
+      "button": {
+        "font-family": "Arial, sans-serif",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000",
+          "background-color": "#e6e6e6"
+        },
+        "background-color": "#ffffff",
+        ":focus": {
+          "background-color": "#e6e6e6"
+        }
+      },
+      "price": {
+        "font-family": "Arial, sans-serif",
+        "font-size": "18px",
+        "color": "#ffffff"
+      },
+      "compareAt": {
+        "font-family": "Arial, sans-serif",
+        "font-size": "15.299999999999999px",
+        "color": "#ffffff"
+      },
+      "unitPrice": {
+        "font-family": "Arial, sans-serif",
+        "font-size": "15.299999999999999px",
+        "color": "#ffffff"
+      },
+      "description": {
+        "font-family": "Arial, sans-serif",
+        "color": "#ffffff"
+      }
+    },
+    "layout": "horizontal",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "description": true
+    },
+    "width": "100%",
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Arial, sans-serif",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000",
+          "background-color": "#e6e6e6"
+        },
+        "background-color": "#ffffff",
+        ":focus": {
+          "background-color": "#e6e6e6"
+        }
+      },
+      "title": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "bold",
+        "font-size": "26px",
+        "color": "#4c4c4c"
+      },
+      "price": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "18px",
+        "color": "#4c4c4c"
+      },
+      "compareAt": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#4c4c4c"
+      },
+      "unitPrice": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#4c4c4c"
+      },
+      "description": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "14px",
+        "color": "#4c4c4c"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {
+    "styles": {
+      "label": {
+        "font-family": "Arial, sans-serif"
+      },
+      "select": {
+        "font-family": "Arial, sans-serif"
+      }
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Arial, sans-serif",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000",
+          "background-color": "#e6e6e6"
+        },
+        "background-color": "#ffffff",
+        ":focus": {
+          "background-color": "#e6e6e6"
+        }
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Arial, sans-serif",
+        "background-color": "#ffffff",
+        ":hover": {
+          "background-color": "#e6e6e6"
+        },
+        ":focus": {
+          "background-color": "#e6e6e6"
+        }
+      },
+      "count": {
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "iconPath": {
+        "fill": "#000000"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+</body>
+</html>

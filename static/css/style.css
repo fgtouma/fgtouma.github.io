@@ -30,6 +30,22 @@ body {
     padding: 2.5em;
 }
 
+.image-gallery {
+    padding: 20px;
+}
+
+.image-gallery .image {
+    width: 500px;
+    height: 550px;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.contact-title {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2.5em;
+}
+
 @media (min-width: 768px) {
     .main-title { font-size: 90px; }
     .subtitle { font-size: 20px; }
